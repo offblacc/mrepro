@@ -1,0 +1,11 @@
+SKv - server i klijent zajedno rade dobro za velike binarne datoteke
+Sv - poslužitelj radi dobro za velike binarne datoteke
+S2 - Poslužitelj radi dobro za zahtjeve poslane u više TCP segmenta: offset (2 okteta) + offset (2 okteta) + prvi dio filename + ostatak filename
+Kv - klijent ispravno prima velike binarne datoteke
++ exit-S 10111 - to bi bilo s dodanim argumentom, npr ./tcpserver nesto
+so 000 - provjera rada servera kad imaš offset 0, 100, jednak veličini datoteke
+unsp 0001 - :
+             + ako poslužitelj vrati 3, klijent ne kreira datoteku
+             + ako poslužitelj vrati 3 klijent vrati 3
+             poslužitelj ispravno radi kad nema dozvolu za čitanje datoteke
+             poslužitelj ispravno radi kad datoteka ne postoji

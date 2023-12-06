@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.ejs": "html",
+        "stdlib.h": "c",
+        "inet.h": "c",
+        "netdb.h": "c"
+    }
+}
